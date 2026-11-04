@@ -73,12 +73,12 @@
 
   <section class="screen" id="consult"><div class="screen-inner">
     <div class="eyebrow">Consultation</div><h1 class="title">Request a consultation.</h1>
-    <div class="program-banner"><img class="photo" data-img="programBanner" alt="Global Reach Clinic building in Doral"></div>
-    <a class="address-card" href="https://www.google.com/maps/search/?api=1&amp;query=9250%20NW%2025th%20St%2C%20Doral%2C%20FL%2033172" target="_blank" rel="noopener" aria-label="Open address in Maps: 9250 NW 25th St, Doral, FL 33172, United States">
+    <div class="program-banner consult-banner"><img class="photo" data-img="programBanner" alt="Global Reach Clinic building in Doral"></div>
+    <button type="button" class="address-card" id="addressCard" aria-label="Get directions to 9250 NW 25th St, Doral, FL 33172, United States">
       <span class="address-pin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.5S5 15.6 5 9.9A7 7 0 0 1 19 9.9c0 5.7-7 11.6-7 11.6Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
       <span class="address-text">9250 NW 25th St<br>Doral, FL 33172<br>United States</span>
       <span class="address-go">Directions</span>
-    </a>
+    </button>
     <form class="form-card" id="contactForm" novalidate>
       <div class="field"><label for="name">Basic information: Full name *</label><input id="name" required autocomplete="name" maxlength="80" placeholder="Your full name"></div>
       <div class="field"><label for="phone">Phone number *</label><input id="phone" type="tel" required autocomplete="tel" inputmode="tel" maxlength="30" placeholder="(786) 931-6508"></div>
@@ -91,6 +91,14 @@
       
       <button class="btn full" type="submit">Contact Global Reach Clinic</button>
       <div class="sheet-backdrop" id="confirmBackdrop"></div>
+  <div class="sheet-backdrop" id="mapsBackdrop"></div>
+  <div class="confirm" id="mapsSheet" role="dialog" aria-modal="true" aria-label="Choose a maps app">
+    <button class="sheet-close" id="closeMaps" type="button" aria-label="Close">&times;</button>
+    <strong>Open directions in</strong>
+    <p class="choose-label">9250 NW 25th St, Doral, FL 33172</p>
+    <a class="btn full secondary" href="https://maps.apple.com/?q=9250%20NW%2025th%20St%2C%20Doral%2C%20FL%2033172" target="_blank" rel="noopener">Apple Maps</a>
+    <a class="btn full secondary" href="https://www.google.com/maps/search/?api=1&amp;query=9250%20NW%2025th%20St%2C%20Doral%2C%20FL%2033172" target="_blank" rel="noopener">Google Maps</a>
+  </div>
       <div class="confirm" id="confirm">
         <button class="sheet-close" id="closeConfirm" type="button" aria-label="Close">&times;</button>
         <strong>Your message is ready.</strong>
