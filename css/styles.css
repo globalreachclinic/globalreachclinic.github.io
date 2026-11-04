@@ -28,3 +28,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 @media (max-width:599px){body{background:#fff}.app{position:fixed;inset:0;height:auto;margin:0 auto}}
 .all-in-one{font-size:15px;font-weight:800;letter-spacing:4px;color:#1189d9;margin:4px 0 10px}
 .facility-intro{font-weight:700;color:#20506f}
+
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'><path d='M1 1l6 6 6-6' fill='none' stroke='%2320506f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+
+#openWA{background:linear-gradient(115deg,#2fdc74,#0ea44e);border-color:transparent;color:#fff;box-shadow:0 8px 22px rgba(14,164,80,.16)}
