@@ -87,11 +87,13 @@
       <div class="field"><label for="reason">Why are you interested in this program? *</label><textarea id="reason" required maxlength="600" placeholder="Briefly describe your goals or questions. Avoid diagnoses, lab values, or other sensitive details in SMS."></textarea></div>
       <div class="info"><strong>Text messaging notice:</strong> Your carrier may charge for sending this message. SMS may not be the most secure place for sensitive health information.</div>
       <button class="btn full" type="submit">Contact Global Reach Clinic</button>
+      <div class="sheet-backdrop" id="confirmBackdrop"></div>
       <div class="confirm" id="confirm">
-        <strong>Your SMS draft is ready.</strong>
-        <p>Continue to your phone’s messaging app to review the prepared message addressed to <strong>+1 (786) 931-6508</strong>. Standard messaging or data rates may apply.</p>
-        <a class="btn full" id="openSMS" href="#">Open Messages</a>
-        <a class="btn full secondary" id="openWA" href="#">Send via WhatsApp</a>
+        <button class="sheet-close" id="closeConfirm" type="button" aria-label="Close">&times;</button>
+        <strong>Your message is ready.</strong>
+        <p>Choose how you’d like to send it to Global Reach Clinic at <strong>+1 (786) 931-6508</strong>. You’ll review the prepared message in the app you pick. Standard messaging or data rates may apply.</p>
+        <a class="btn full" id="openSMS" href="#">Message</a>
+        <a class="btn full secondary" id="openWA" href="#">WhatsApp</a>
         <div class="note" id="linkHint" style="display:none"><strong>The app didn't open?</strong> Previews inside WhatsApp, YouTube and other apps block links to other apps. Open this file in Safari or Chrome and tap again — or use Copy message below.</div>
         <button class="btn full secondary" type="button" id="copySMS">Copy message</button>
         <button class="btn full secondary" type="button" id="editSMS">Edit details</button>
