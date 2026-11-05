@@ -49,3 +49,25 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .detail-section p{font-size:14.5px;color:#4d6a84;line-height:1.65;margin:0 0 10px}
 .detail-section p:last-child{margin-bottom:0}
 .tagline{text-align:center;color:#1768a1;font-weight:800;font-size:13.5px;letter-spacing:.02em;margin:18px 0 2px}
+
+.check-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.check-list li{position:relative;padding-left:30px;font-size:14.5px;color:#4d6a84;line-height:1.55}
+.check-list li::before{content:"\2713";position:absolute;left:0;top:0;color:#1b9bf0;font-weight:900}
+.ready-line{text-align:center;color:var(--navy);font-weight:800;font-size:16px;margin:20px 0 0}
+
+.detail-section.collapsible h3{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;margin:0}
+.detail-section.collapsible.open h3{margin:0 0 12px}
+.detail-section.collapsible .sec-body{display:none}
+.detail-section.collapsible.open .sec-body{display:block}
+.sec-chev{flex:none;color:#1b9bf0;transition:transform .25s}
+.detail-section.collapsible.open .sec-chev{transform:rotate(180deg)}
+
+.home-h2{font-size:24px;line-height:1.15;letter-spacing:-.03em;color:var(--navy);margin:2px 0 8px}
+.pillar-list{display:grid;gap:12px}
+.pillar-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}
+.pillar-card h3{font-size:16.5px;color:var(--navy);margin:12px 0 8px;line-height:1.35}
+.pillar-card p{font-size:14px;color:#4d6a84;line-height:1.6;margin:0}
+.journey-top{display:flex;justify-content:space-between;align-items:flex-start}
+.journey-top + h3{margin-top:12px}
+.step-num{color:#9db8cc;font-weight:800;font-size:14px}
+.program-icon.round{border-radius:50%}
