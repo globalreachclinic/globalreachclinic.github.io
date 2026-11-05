@@ -45,3 +45,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 #mapsSheet .btn{margin:5px 0}
 
 .consult-banner{height:auto;aspect-ratio:16/9}
+
+.detail-section p{font-size:14.5px;color:#4d6a84;line-height:1.65;margin:0 0 10px}
+.detail-section p:last-child{margin-bottom:0}
+.tagline{text-align:center;color:#1768a1;font-weight:800;font-size:13.5px;letter-spacing:.02em;margin:18px 0 2px}
