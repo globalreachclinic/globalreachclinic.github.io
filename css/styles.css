@@ -75,8 +75,6 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .deck{position:relative}
 .deck-card{overflow:hidden;position:absolute;left:0;right:0;top:0;transition:transform .5s cubic-bezier(.22,.9,.28,1);will-change:transform;user-select:none;-webkit-user-select:none;touch-action:pan-y;cursor:grab;box-shadow:0 10px 26px rgba(11,84,140,.08)}
 .deck-card.dragging{transition:none;cursor:grabbing}
-.deck.hinting .deck-card[data-pos="0"]{animation:deckHint 1.15s ease}
-@keyframes deckHint{0%{transform:translateY(0) scale(1) rotate(0)}30%{transform:translate(-16px,0) rotate(-1.6deg)}60%{transform:translate(7px,0) rotate(.7deg)}100%{transform:translateY(0) scale(1) rotate(0)}}
 .deck-dots{display:flex;gap:7px;justify-content:center;margin:14px 0 2px}
 .deck-dot{width:8px;height:8px;border-radius:99px;background:#c3d9ea;border:0;padding:0;cursor:pointer;transition:all .3s}
 .deck-dot.active{background:#0b84d6;width:22px}
