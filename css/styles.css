@@ -90,3 +90,6 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .gal-close{text-align:center;padding:12px 8px 2px}
 .gal-close strong{display:block;font-size:19px;color:#0b3d91;letter-spacing:.01em}
 .gal-close span{display:block;margin-top:4px;font-size:12px;color:#5b7a94;letter-spacing:.06em;text-transform:uppercase}
+
+/* Textos Home (guía): intro de Find the right care */
+.care-intro{font-size:14px;line-height:1.55;color:#315a7f;margin:2px 0 10px}
