@@ -78,3 +78,15 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .deck-dots{display:flex;gap:7px;justify-content:center;margin:14px 0 2px}
 .deck-dot{width:8px;height:8px;border-radius:99px;background:#c3d9ea;border:0;padding:0;cursor:pointer;transition:all .3s}
 .deck-dot.active{background:#0b84d6;width:22px}
+
+/* Galería visual de Home (guía del diseñador, sección 02) — deslizable, con puntos */
+.gallery{overflow:hidden;border-radius:18px;box-shadow:0 10px 24px rgba(11,61,145,.12);touch-action:pan-y}
+.gal-track{display:flex;transition:transform .38s ease}
+.gal-slide{position:relative;flex:0 0 100%;margin:0}
+.gal-slide img{width:100%;aspect-ratio:16/10.6;object-fit:cover;display:block;-webkit-user-drag:none;user-select:none}
+.gal-cap{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(6,43,77,.80));color:#fff;pointer-events:none}
+.gal-cap b{display:block;font-size:16.5px;letter-spacing:.02em;text-transform:uppercase;line-height:1.25}
+.gal-cap span{font-size:12.5px;opacity:.94}
+.gal-close{text-align:center;padding:12px 8px 2px}
+.gal-close strong{display:block;font-size:19px;color:#0b3d91;letter-spacing:.01em}
+.gal-close span{display:block;margin-top:4px;font-size:12px;color:#5b7a94;letter-spacing:.06em;text-transform:uppercase}
