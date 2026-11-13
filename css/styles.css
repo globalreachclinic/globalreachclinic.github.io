@@ -113,3 +113,18 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .legal-links{display:flex;flex-wrap:wrap;gap:6px 14px}
 .legal-links button{background:none;border:0;padding:2px 0;font-size:12.5px;font-weight:650;color:#315a7f;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
 .legal-foot p{font-size:11.5px;color:#7d9db4;margin:10px 0 0}
+
+/* Fondo del Home: la foto del edificio fija, el contenido corre frente a ella */
+#home{position:relative}
+.home-bg{position:sticky;top:0;height:100%;margin-bottom:-100%;z-index:0;overflow:hidden;pointer-events:none}
+.home-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.home-bg-wash{position:absolute;inset:0;background:linear-gradient(180deg,rgba(240,248,253,.34) 0%,rgba(240,248,253,.62) 46%,rgba(240,248,253,.88) 100%)}
+#home .screen-inner{position:relative;z-index:1}
+
+/* Flechas flotantes de navegación (galería y mazos de tarjetas) */
+.gallery{position:relative}
+.nav-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.88);border:1px solid rgba(188,217,242,.95);box-shadow:0 4px 14px rgba(11,61,145,.22);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:40;padding:0}
+.nav-arrow svg{width:20px;height:20px;fill:none;stroke:#0b5fa5;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.nav-arrow.prev{left:10px}
+.nav-arrow.next{right:10px}
+.nav-arrow:active{transform:translateY(-50%) scale(.93)}
