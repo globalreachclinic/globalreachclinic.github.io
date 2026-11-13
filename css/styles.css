@@ -142,3 +142,16 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .deck .nav-arrow.prev{left:-32px;right:auto}
 .deck .nav-arrow.next{right:-32px;left:auto}
 .deck .nav-arrow:active{transform:translateY(-50%) scale(.93)}
+
+/* Tarjetas de Programs como en el website: titular, 3 puntos y Learn more */
+.program-tile.as-card{flex-direction:column;align-items:stretch;gap:0;text-align:left}
+.tile-head{display:flex;align-items:center;gap:12px}
+.tile-head h3{flex:1;margin:0}
+.tile-tag{margin:10px 0 0;font-size:13.5px;line-height:1.5;color:#315a7f}
+.tile-points{list-style:none;margin:11px 0 0;padding:11px 0 0;border-top:1px solid #e6f1fa;display:grid;gap:8px}
+.tile-points li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;line-height:1.45;color:#315a7f}
+.tick{flex:0 0 auto;width:19px;height:19px;border-radius:50%;background:#eaf5ff;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.tick svg{width:11px;height:11px;fill:none;stroke:#0b5fa5;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.tile-more{margin-top:11px;font-size:13.5px;font-weight:750;color:#1768a1}
+.tile-more::after{content:" ›"}
+.clinical-note{font-size:12px;line-height:1.55;color:#5b7a94;margin:14px 2px 0}
