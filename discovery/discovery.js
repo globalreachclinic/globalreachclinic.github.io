@@ -6,6 +6,7 @@
 (function () {
   'use strict';
   var PUBLIC_KEYS = {
+    'GRC-CAMPAIGN-KEY-03': { kty: 'EC', crv: 'P-256', x: 'Dt-yx8-anxKbNOQgVYICbAQK_2xeTPGNlKZ7He-MXyc', y: 'MKA16-CS-h_9AOwUWFK-14fYXlbk5qUyilbFw8R48n8' },
     'GRC-CAMPAIGN-KEY-01': { kty: 'EC', crv: 'P-256', x: 'PZJiGFsfXCPuTolk1b9e5EGX7_ihDDQqY0aYgXj3go4', y: 'ux6ayc1xa0qioFd2lzda9QgcY5Ca2WyRuiMCpnRy8h8' }
   };
   var SUPPORTED_LEGAL = ['DISCOVERY-LEGAL-V1'];
