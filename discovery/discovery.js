@@ -9,6 +9,17 @@
     'GRC-CAMPAIGN-KEY-03': { kty: 'EC', crv: 'P-256', x: 'Dt-yx8-anxKbNOQgVYICbAQK_2xeTPGNlKZ7He-MXyc', y: 'MKA16-CS-h_9AOwUWFK-14fYXlbk5qUyilbFw8R48n8' },
     'GRC-CAMPAIGN-KEY-01': { kty: 'EC', crv: 'P-256', x: 'PZJiGFsfXCPuTolk1b9e5EGX7_ihDDQqY0aYgXj3go4', y: 'ux6ayc1xa0qioFd2lzda9QgcY5Ca2WyRuiMCpnRy8h8' }
   };
+  var PRICES = {
+    'Global Reach Signature IV Foundation': '$175',
+    'Global Reach Immune Optimization': '$190',
+    'Global Reach Performance & Recovery': '$190',
+    'Global Reach MigraRelief': '$180',
+    'Global Reach Hangover Recovery': '$180',
+    'Global Reach Metabolic Optimization Infusion': '$210',
+    'Global Reach Skin & Hair Vitality': '$185',
+    'Global Reach Advanced Skin Restoration': '$210',
+    'Global Reach NAD+ Cellular Vitality': '$250 (250 mg) / $400'
+  };
   var SUPPORTED_LEGAL = ['DISCOVERY-LEGAL-V1'];
   var COUNTER_NS = 'globalreachclinic-discovery';
   var COUNTER_BASE = 'https://abacus.jasoncameron.dev';
@@ -99,12 +110,9 @@
       '. Treatment is subject to clinical screening and provider approval, and may be declined if not clinically appropriate. ' +
       (cp.tr ? 'The pass may be transferred. ' : 'The pass is not transferable. ') + 'It has no cash value.';
     $('discCodeLine').textContent = 'Campaign code ' + cp.id + ' · Terms version ' + cp.lv;
-    if (typeof cp.tot === 'number' && state.remaining !== null) {
-      $('dRowAvail').textContent = state.remaining + ' of ' + cp.tot + ' passes left';
-      $('dAvailWrap').style.display = '';
-    } else if (typeof cp.tot === 'number') {
-      $('dRowAvail').textContent = 'Limited to ' + cp.tot + ' passes';
-      $('dAvailWrap').style.display = '';
+    if (PRICES[cp.svc]) {
+      $('dRowPrice').textContent = PRICES[cp.svc] + ' — yours complimentary with this pass';
+      $('dPriceWrap').style.display = '';
     }
   }
   document.addEventListener('DOMContentLoaded', function () {

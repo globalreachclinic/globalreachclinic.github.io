@@ -118,6 +118,23 @@
       iv.disabled = true;
     }
 
+    var src = $('source');
+    if (src) {
+      var chU = String(cp.ch || '').toUpperCase(), target = null, otherTxt = null;
+      if (chU.indexOf('IG') === 0 || chU.indexOf('INSTAGRAM') >= 0) target = 'Instagram / Social media';
+      else if (chU.indexOf('EVENT') >= 0 || chU.indexOf('EVENTO') >= 0) target = 'Event / Community outreach';
+      else if (chU.indexOf('FLYER') >= 0) { target = 'Other'; otherTxt = 'Flyer'; }
+      else if (chU.indexOf('PARTNER') >= 0 || chU.indexOf('SOCIO') >= 0) { target = 'Other'; otherTxt = 'Partner'; }
+      if (target) {
+        for (var k = 0; k < src.options.length; k++) if (src.options[k].text === target) { src.selectedIndex = k; break; }
+        src.dispatchEvent(new Event('change'));
+        if (otherTxt) { var os = $('otherSource'); if (os) { os.value = otherTxt; os.disabled = true; } }
+        src.disabled = true;
+      }
+    }
+    var rsn = $('reason');
+    if (rsn && !rsn.value) rsn.value = 'I would like to request my Discovery Pass — ' + cp.n + ' (' + cp.svc + ').';
+
     var confirm = $('confirm'), wa = $('openWA');
     if (confirm && wa) {
       var copyBtn = document.createElement('button');
