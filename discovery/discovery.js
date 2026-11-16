@@ -22,17 +22,18 @@
     for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
     return out;
   }
+  function parseWhen(iso) { return new Date(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(iso) ? iso + 'T12:00:00' : iso); }
   function fmtDate(iso, tz) {
-    try { return new Intl.DateTimeFormat('en-US', { timeZone: tz || 'America/New_York', year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(iso)); }
+    try { return new Intl.DateTimeFormat('en-US', { timeZone: tz || 'America/New_York', year: 'numeric', month: 'long', day: 'numeric' }).format(parseWhen(iso)); }
     catch (e) { return iso; }
   }
   function fmtRange(st, en, tz) {
     try {
       var o = { timeZone: tz || 'America/New_York', month: 'long', day: 'numeric' };
       var y = { timeZone: tz || 'America/New_York', year: 'numeric' };
-      return new Intl.DateTimeFormat('en-US', o).format(new Date(st)) + ' – ' +
-             new Intl.DateTimeFormat('en-US', o).format(new Date(en)) + ', ' +
-             new Intl.DateTimeFormat('en-US', y).format(new Date(en));
+      return new Intl.DateTimeFormat('en-US', o).format(parseWhen(st)) + ' – ' +
+             new Intl.DateTimeFormat('en-US', o).format(parseWhen(en)) + ', ' +
+             new Intl.DateTimeFormat('en-US', y).format(parseWhen(en));
     } catch (e) { return st + ' – ' + en; }
   }
   function fetchCounter(path) {

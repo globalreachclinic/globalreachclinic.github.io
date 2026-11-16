@@ -15,6 +15,7 @@
   if (!data || !data.p || !data.s || !data.cp) return;
 
   var PUBLIC_KEYS = {
+    'GRC-CAMPAIGN-KEY-03': { kty: 'EC', crv: 'P-256', x: 'Dt-yx8-anxKbNOQgVYICbAQK_2xeTPGNlKZ7He-MXyc', y: 'MKA16-CS-h_9AOwUWFK-14fYXlbk5qUyilbFw8R48n8' },
     'GRC-CAMPAIGN-KEY-01': { kty: 'EC', crv: 'P-256', x: 'PZJiGFsfXCPuTolk1b9e5EGX7_ihDDQqY0aYgXj3go4', y: 'ux6ayc1xa0qioFd2lzda9QgcY5Ca2WyRuiMCpnRy8h8' }
   };
   var COUNTER_NS = 'globalreachclinic-discovery';
@@ -30,7 +31,7 @@
     return out;
   }
   function fmtDate(iso, tz) {
-    try { return new Intl.DateTimeFormat('en-US', { timeZone: tz || 'America/New_York', year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(iso)); }
+    try { return new Intl.DateTimeFormat('en-US', { timeZone: tz || 'America/New_York', year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(iso) ? iso + 'T12:00:00' : iso)); }
     catch (e) { return iso; }
   }
   function promoText() {
