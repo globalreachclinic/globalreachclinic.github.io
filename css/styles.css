@@ -155,3 +155,14 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .tile-more{margin-top:11px;font-size:13.5px;font-weight:750;color:#1768a1}
 .tile-more::after{content:" ›"}
 .clinical-note{font-size:12px;line-height:1.55;color:#5b7a94;margin:14px 2px 0}
+
+/* Team: parrilla y fichas (2026-11-17) */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0 6px}
+.member-card{display:flex;flex-direction:column;justify-content:flex-start;background:#fff;border:1px solid #dbe7f3;border-radius:18px;overflow:hidden;text-align:left;padding:0;cursor:pointer;box-shadow:0 4px 14px rgba(11,60,110,.06);font:inherit}
+.member-card img{width:100%;height:auto;display:block}
+.member-card .mc-body{padding:10px 12px 12px}
+.member-card .mc-name{font-weight:700;font-size:15px;color:#0b3c6e;line-height:1.25}
+.member-card .mc-cred{font-size:12px;color:#0b5fa5;font-weight:600;margin-top:2px}
+.member-card .mc-focus{font-size:12px;color:#5b7a94;margin-top:4px;line-height:1.35}
+.member-card .mc-link{font-size:12px;font-weight:700;color:#0b5fa5;margin-top:8px}
+#memberBack{position:static;width:auto;height:auto;padding:9px 16px;border-radius:999px;background:#eaf3fb;color:#0b5fa5;font-weight:700;font-size:14px;border:1px solid #cfe3f5;margin-bottom:12px;display:inline-block}
