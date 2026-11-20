@@ -100,7 +100,7 @@ const TEAM = [
           ['Languages','English and Spanish']]},
  {id:'juan', photo:'teamJuan', name:'Juan M. Cruz', cred:'Senior Medical Assistant',
   focus:'Patient care \u00b7 Program support',
-  quote:'My medical training taught me that good care is built on details. But working with patients every day taught me something just as important: people do better when they feel heard, informed, and supported. That\u2019s the balance I try to bring to every patient, at every visit.',
+  quote:'My medical training taught me that good care is built on details. People do better when they feel heard, informed, and supported. That\u2019s the balance I try to bring to every patient, at every visit.',
   bio:`<p>Juan Manuel Cruz is a senior medical assistant at Global Reach Clinic, where he supports patients throughout their care \u2014 from their first consultation to every follow-up along the way. Trained as a physician in Cuba, he brings a solid clinical foundation to his role, and a deep respect for how much clear communication matters in medicine.</p><p>In the clinic, he helps keep each patient\u2019s program on track: preparing visits, supporting the providers during care, and making sure no question goes unanswered between appointments. His medical background helps him understand what each patient is going through, and he takes the time to explain every step in plain, simple terms.</p><p>Since 2022, he has continued his healthcare career in Florida. At Global Reach Clinic in Doral, he works every day to help patients feel informed, supported, and consistent with the plan they started.</p>`,
   glance:[['Role','Senior Medical Assistant'],
           ['Medical training','Doctor of Medicine \u2014 Cuba'],
