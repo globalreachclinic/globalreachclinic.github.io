@@ -29,3 +29,19 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Hel
 .steps-line{display:flex;align-items:center;justify-content:space-between;gap:6px;background:#fff;border:1px solid #dbe7f3;border-radius:14px;padding:12px 14px;margin:14px 0 4px;font-size:13px;color:#33536e}
 .steps-line b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#0b5fa5;color:#fff;font-size:12px;margin-right:5px}
 .steps-line i{color:#8fb6d9;font-style:normal}
+
+/* ===== Capa de escritorio (≥1024px): la invitación, centrada y más ancha. El móvil no cambia. ===== */
+@media (min-width:1024px){
+  .wrap{max-width:880px;padding:46px 40px 60px}
+  .logo{height:84px}
+  .title{font-size:42px}
+  .tag{font-size:20px}
+  .sub{font-size:16px;max-width:640px;margin-left:auto;margin-right:auto}
+  .benefit{font-size:15.5px;padding:15px 18px}
+  .pass-card{padding:30px 34px;border-radius:22px}
+  .pass-row{font-size:16px;padding:11px 0}
+  .steps-line{font-size:15.5px}
+  .legal-box{padding:22px 26px}
+  .legal-p{font-size:13.5px;line-height:1.65}
+  .cta{font-size:17px;padding:17px 22px}
+}
