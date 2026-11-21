@@ -1,5 +1,6 @@
 /* ===== Capa de escritorio (≥1024px). Por debajo de ese ancho, este archivo no cambia nada. ===== */
 .reach-card{display:none}
+.hero-side{display:none}
 @media (min-width:1024px){
   body{background:linear-gradient(180deg,#e9f4fc 0%,#dceefb 100%)}
   .app{max-width:1280px;width:96vw;height:94vh;border-radius:24px}
@@ -18,6 +19,11 @@
   .home-copy{max-width:600px}
   .home-copy h1{font-size:64px}
   .home-copy p{font-size:16.5px;line-height:1.6}
+  /* Tarjeta del edificio en el hero (foto vertical, solo escritorio) */
+  .home-top{position:relative}
+  #home .home-copy{max-width:540px}
+  .hero-side{display:block;position:absolute;right:58px;top:50%;transform:translateY(-50%);width:400px}
+  .hero-side img{width:100%;height:520px;object-fit:cover;border-radius:24px;box-shadow:0 24px 48px rgba(11,61,145,.22);display:block}
   .home-actions{max-width:520px}
   /* G2 — galería en mosaico: las cinco fotos a la vez, en su formato */
   #gallery{height:520px}
