@@ -59,7 +59,7 @@
     invalid: ['Invalid Promotion', 'This Discovery Pass invitation could not be verified.'],
     notyet: ['Promotion Not Yet Active', 'This invitation is not active yet.'],
     expired: ['Promotion Expired', 'This Discovery Pass promotion has ended.'],
-    unavailable: ['Promotion Unavailable', 'This invitation is currently unavailable. Please contact Global Reach Clinic for assistance.']
+    unavailable: ['Promotion Unavailable', 'This invitation is currently unavailable. Please contact Global Reach Health Clinic for assistance.']
   };
   function showError(kind) {
     var e = ERRORS[kind] || ERRORS.invalid;
