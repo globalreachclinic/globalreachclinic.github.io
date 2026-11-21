@@ -118,7 +118,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 #home{position:relative;z-index:1}
 .home-bg{position:absolute;inset:0;z-index:0;display:none;overflow:hidden;pointer-events:none}
 #home.active ~ .home-bg{display:block}
-.home-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.home-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(.45) brightness(1.05) contrast(.97)}
 .home-bg-wash{position:absolute;inset:0;background:linear-gradient(180deg,rgba(243,249,252,.86) 0%,rgba(243,249,252,.93) 45%,rgba(243,249,252,.96) 100%)}
 #home .screen-inner{position:relative;z-index:1}
 
