@@ -22,8 +22,8 @@
   /* Tarjeta del edificio en el hero (foto vertical, solo escritorio) */
   .home-top{position:relative}
   #home .home-copy{max-width:540px}
-  .hero-side{display:block;position:absolute;right:58px;top:50%;transform:translateY(-50%);width:400px}
-  .hero-side img{width:100%;height:520px;object-fit:cover;border-radius:24px;box-shadow:0 24px 48px rgba(11,61,145,.22);display:block}
+  .hero-side{display:block;position:absolute;right:58px;top:54px;bottom:54px;width:400px}
+  .hero-side img{width:100%;height:100%;object-fit:cover;border-radius:24px;box-shadow:0 24px 48px rgba(11,61,145,.22);display:block}
   .home-actions{max-width:520px}
   /* G2 — galería en mosaico: las cinco fotos a la vez, en su formato */
   #gallery{height:520px}
@@ -53,8 +53,8 @@
   #consult .screen-inner{display:grid;grid-template-columns:1.12fr .88fr;column-gap:26px;row-gap:18px;align-items:start}
   #consult .eyebrow,#consult .title{grid-column:1/-1}
   #consult .form-card{grid-column:1;grid-row:3/span 3;padding:26px}
-  #consult .consult-banner{grid-column:2;grid-row:3;height:196px;margin:0;border-radius:20px;overflow:hidden}
-  #consult .consult-banner img.photo{width:100%;height:100%;object-fit:cover;display:block}
+  #consult .consult-banner{grid-column:2;grid-row:3;height:196px;width:100%;aspect-ratio:auto;margin:0;border-radius:20px;overflow:hidden}
+  #consult .consult-banner img.photo{width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block}
   #consult .address-card{grid-column:2;grid-row:4;width:100%}
   #consult .reach-card{display:block;grid-column:2;grid-row:5;background:#fff;border:1px solid var(--line);border-radius:21px;padding:18px;box-shadow:var(--shadow)}
   #consult .legal-foot{grid-column:1/-1}
