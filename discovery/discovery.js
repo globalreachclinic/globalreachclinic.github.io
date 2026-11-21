@@ -18,7 +18,7 @@
     'Global Reach Metabolic Optimization Infusion': '$210',
     'Global Reach Skin & Hair Vitality': '$185',
     'Global Reach Advanced Skin Restoration': '$210',
-    'Global Reach NAD+ Cellular Vitality': '$250 (250 mg) / $400'
+    'Global Reach NAD+ Cellular Vitality': 'from $250'
   };
   var SUPPORTED_LEGAL = ['DISCOVERY-LEGAL-V1'];
   var COUNTER_NS = 'globalreachclinic-discovery';

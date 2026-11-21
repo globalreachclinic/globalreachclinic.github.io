@@ -53,6 +53,9 @@
   #facilities .subtitle{max-width:880px}
   .br-d{display:initial}
   #ivList{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  #iv .iv-cover{height:388px;margin:18px 0 20px}
+  #ivList>.eyebrow{grid-column:1/-1}
+  #ivList>.micro{grid-column:1/-1;margin-top:-10px}
   #consult .screen-inner{display:grid;grid-template-columns:1.12fr .88fr;column-gap:26px;row-gap:18px;align-items:start}
   #consult .eyebrow,#consult .title{grid-column:1/-1}
   #consult .form-card{grid-column:1;grid-row:3/span 2;padding:26px}

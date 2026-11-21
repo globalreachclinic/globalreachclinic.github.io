@@ -172,3 +172,6 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 .br-d{display:none}
 
 .consult-banner img.photo{filter:saturate(.5) brightness(1.05) contrast(.97)}
+
+.nad-opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
+.nad-opts span{background:#eef7ff;border:1px solid #cfe6f7;color:#0b3d91;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:700}
