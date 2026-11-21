@@ -64,3 +64,11 @@
   .legal-body{max-width:840px;margin:0 auto}
   .confirm.active{left:50%;right:auto;transform:translateX(-50%);bottom:26px;width:480px;border-bottom:1px solid #c0e0ef;border-radius:22px}
 }
+
+/* Levitación ligera al pasar el cursor (solo escritorio con ratón) */
+@media (min-width:1024px) and (hover:hover){
+  .program-tile,.member-card,.facility-item,.iv-card,.detail-section{transition:transform .25s ease,box-shadow .25s ease}
+  .program-tile:hover,.member-card:hover,.facility-item:hover,.iv-card:hover,.detail-section:hover{transform:translateY(-4px);box-shadow:0 18px 34px rgba(11,61,145,.16)}
+  #pillarDeck .deck-card{transition:transform .25s ease,box-shadow .25s ease}
+  #pillarDeck .deck-card:hover{transform:translateY(-4px)!important;box-shadow:0 18px 34px rgba(11,61,145,.16)}
+}
