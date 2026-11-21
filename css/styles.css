@@ -168,3 +168,5 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 #memberBack{position:static;width:auto;height:auto;padding:9px 16px;border-radius:999px;background:#eaf3fb;color:#0b5fa5;font-weight:700;font-size:14px;border:1px solid #cfe3f5;margin-bottom:12px;display:inline-block}
 .mc-role{font-size:12.5px;font-weight:700;color:#0b3c6e;margin-top:2px}
 .member-role{font-size:17px;font-weight:700;color:#0b3c6e;margin-top:2px}
+
+.br-d{display:none}
