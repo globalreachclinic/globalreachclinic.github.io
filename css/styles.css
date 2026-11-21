@@ -175,3 +175,8 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-vis
 
 .nad-opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
 .nad-opts span{background:#eef7ff;border:1px solid #cfe6f7;color:#0b3d91;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:700}
+
+.logo-watermark{position:absolute;inset:0;z-index:0;display:none;overflow:hidden;pointer-events:none;align-items:center;justify-content:center}
+#programs.active ~ .logo-watermark,#programDetail.active ~ .logo-watermark,#iv.active ~ .logo-watermark,#facilities.active ~ .logo-watermark,#provider.active ~ .logo-watermark,#member.active ~ .logo-watermark,#consult.active ~ .logo-watermark{display:flex}
+.logo-watermark img{width:92%;height:92%;object-fit:contain;mix-blend-mode:multiply;opacity:.14}
+#programs .screen-inner,#programDetail .screen-inner,#iv .screen-inner,#facilities .screen-inner,#provider .screen-inner,#member .screen-inner,#consult .screen-inner{position:relative;z-index:1}
