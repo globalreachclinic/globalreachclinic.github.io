@@ -53,7 +53,7 @@
       .catch(function () {});
   }
   function rewriteLinks() {
-    [['openSMS', 'body='], ['openWA', 'text=']].forEach(function (pair) {
+    [['openSMS', 'body='], ['openWA', 'text='], ['openEmail', 'body=']].forEach(function (pair) {
       var a = $(pair[0]);
       if (!a) return;
       var href = a.getAttribute('href') || '';
