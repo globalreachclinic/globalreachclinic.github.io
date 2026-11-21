@@ -19,10 +19,25 @@
   .home-copy h1{font-size:64px}
   .home-copy p{font-size:16.5px;line-height:1.6}
   .home-actions{max-width:520px}
-  .gal-slide{height:460px}
-  .gal-slide img{height:100%;object-fit:cover}
-  .deck{margin:0 46px}
-  .deck-card{padding:30px 34px}
+  /* G2 — galería en mosaico: las cinco fotos a la vez, en su formato */
+  #gallery{height:520px}
+  #galTrack{transform:none!important;display:grid;grid-template-columns:1.55fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:100%}
+  .gal-slide{flex:none;height:100%;border-radius:14px;overflow:hidden}
+  .gal-slide:first-child{grid-row:1/3}
+  .gal-slide img{height:100%;aspect-ratio:auto;object-fit:cover}
+  #galPrev,#galNext,#galDots{display:none}
+  .gal-cap b{font-size:14px}
+  .gal-cap span{font-size:11.5px}
+  .gal-slide:first-child .gal-cap b{font-size:19px}
+  /* T1 — los tres pilares lado a lado, con su formato de tarjeta */
+  #pillarDeck{display:flex;gap:18px;height:auto!important;margin:0}
+  #pillarDeck .deck-card{position:relative!important;flex:1 1 0;transform:none!important;left:auto;right:auto;top:auto;padding:30px 34px}
+  #pillarDeck .nav-arrow{display:none}
+  #pillarDots{display:none}
+  /* D1 — detalle: banner en proporción y columna de lectura */
+  .program-banner{height:380px}
+  .program-banner img{object-position:center 18%}
+  #programDetail .eyebrow,#programDetail .title,#programDetail .quote,#programDetail .desc,#programDetail .detail-section,#programDetail .ready-line,#programDetail .tagline,#programDetail .detail-actions{max-width:840px;margin-left:auto;margin-right:auto;width:100%}
   #programList{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .team-grid{grid-template-columns:repeat(4,1fr);gap:20px}
   #member .screen-inner{max-width:1060px}
