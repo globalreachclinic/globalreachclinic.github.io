@@ -50,8 +50,12 @@ footer{max-width:1180px;margin:0 auto;padding:6px 20px 30px;color:var(--muted);f
   .rows3 strong{text-align:right}
 }
 @media (max-width:719px){
-  .rows3 li{flex-wrap:wrap}
-  .rows3 .svc{flex:1 1 100%}
-  .rows3 .ins::before{content:"Insurance: ";color:#8a9ba8;font-style:normal}
-  .rows3 li.total .ins::before{content:"Insurance: "}
+  .rows3 li{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"svc svc" "val ins";column-gap:16px;row-gap:7px;padding:13px 0}
+  .rows3 .svc{grid-area:svc}
+  .rows3 strong{grid-area:val;font-size:17px}
+  .rows3 strong::before{content:"VALUE";display:block;font-size:10px;font-weight:800;letter-spacing:.09em;color:#8a9ba8;margin-bottom:1px}
+  .rows3 .ins{grid-area:ins;text-align:right;font-size:15px}
+  .rows3 .ins::before{content:"THROUGH INSURANCE";display:block;font-size:10px;font-weight:800;letter-spacing:.09em;color:#8a9ba8;font-style:normal;margin-bottom:3px}
+  .rows3 li.total{background:#f4faff;border:1px solid #d9edfb;border-radius:12px;padding:13px 12px;margin-top:6px}
+  .rows3 li.total .svc{font-size:16px}
 }
