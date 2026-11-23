@@ -33,3 +33,25 @@ footer{max-width:1180px;margin:0 auto;padding:6px 20px 30px;color:var(--muted);f
   .hero{grid-template-columns:1fr 340px;gap:22px;align-items:start}
   h1{font-size:46px}
 }
+
+.thead{display:none}
+.rows3 .ins{color:#315a7f;white-space:nowrap;text-align:right}
+.rows3 .ins.nc{color:#8a9ba8;font-style:italic}
+.rows3 .ins.dash{color:#b7cbd9}
+.rows3 li.total{border-top:2px solid #cfe6f7;font-weight:800}
+.rows3 li.total .svc{color:#0b3d91}
+.save{margin-top:14px;background:#eef7ff;border:1px solid #cfe6f7;border-radius:12px;padding:12px 14px;font-size:15.5px;color:#173f5f}
+.save strong{color:#0b3d91}
+@media (min-width:720px){
+  .thead{display:grid;grid-template-columns:1fr 100px 180px;gap:16px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#5b7a94;padding:0 0 8px}
+  .thead span:nth-child(2){text-align:right}
+  .thead span:nth-child(3){text-align:right}
+  .rows3 li{display:grid;grid-template-columns:1fr 100px 180px;gap:16px;align-items:baseline}
+  .rows3 strong{text-align:right}
+}
+@media (max-width:719px){
+  .rows3 li{flex-wrap:wrap}
+  .rows3 .svc{flex:1 1 100%}
+  .rows3 .ins::before{content:"Insurance: ";color:#8a9ba8;font-style:normal}
+  .rows3 li.total .ins::before{content:"Insurance: "}
+}
